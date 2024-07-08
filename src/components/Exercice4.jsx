@@ -1,8 +1,11 @@
+import { useState } from 'react';
+
 import Dice from "./container/Dice";
 import Exercice from "./container/Exercice";
 
 export default function Exercice4() {
   // 1. Crée un state qui garde en mémoire une valeur numérique.
+  const [count, setCount] = useState(1)
 
   const rollThatDice = () => {
     // 2. Génère une nouvelle valeur aléatoire entre 1 et 6 et met à jour le state avec cette valeur.
